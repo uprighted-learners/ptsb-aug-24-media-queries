@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+@media print {
+    /* ? if the page is in print mode, it will use the ruleset below */
+    body {
+        background-color: white;
+        color: red;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        color: blue;
+    }
+}
+
+@media print , (max-width: 500px) {
+    /* ? OR statement , - checks if either value is true */
+    li {
+        color: rebeccapurple;
+    }
+}
+
+/* 
+    ? NOT statement
+    * rarely used
+    * inverts the meaning
+*/
+
+/* 
+    ? ONLY
+    * used to remain compatible with older browsers
+*/
